@@ -7,6 +7,7 @@ if   CODE = 1234
 and  GUESS = 1567
 HINT : 1 digits are at correct place.
        0 digits are at wrong place.
+       
 and GUESS = 5617
 HINT : 0 digits are at correct place.
        1 digits are at correct place.
