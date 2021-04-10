@@ -1,12 +1,17 @@
-print('CODEBREAK\nA 4-digit code has been generated, your aim is to crack it using the hints given.\nYou will be prompted whether your guessed code has digits in the correct place or wrong place if they are in the code.')
+print('CODEBREAK\nA 4-digit code with distinct digits has been generated, your aim is to crack it using the hints given.\nYou will be prompted whether your guessed code has digits in the correct place or wrong place if they are in the code.\nFor eg: if CODE = 1234\nYour guess = 1456\n You will be prompted: 1 is at correct place and 1 is at wrong place.')
 # CODE GENERATION
 import random
-numbers = [0,1,2,3,4,5,6,7,8,9]
-code = ''
-for x in range(0,4):
-    n = random.choice(numbers)
-    code += str(n)
-    numbers.remove(n)
+digit1=random.randint(0,9)
+digit2=random.randint(0,9)
+while digit2==digit1:
+    digit2=random.randint(0,9)
+digit3=random.randint(0,9)
+while digit3==digit1 or digit3==digit2:
+    digit3=random.randint(0,9)
+digit4=random.randint(0,9)
+while digit4==digit1 or digit4==digit2 or digit4==digit3:
+    digit4=random.randint(0,9)
+code=str(digit1)+str(digit2)+str(digit3)+str(digit4)
 
 # VARIABLES
 guess_status=False
