@@ -58,5 +58,3 @@ while not guess_status:
     if max_guess-n_guesses==0:
         continue           
     print(f'{place_true} are at correct place\n{place_false} are at wrong place\n')
-
-esc=input('Finished')
