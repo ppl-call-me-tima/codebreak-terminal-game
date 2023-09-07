@@ -28,6 +28,8 @@ while not guess_status:
     if max_guess-n_guesses == 0:
         print(f'\nYou lost. The code was {code}.')
         break
+    elif max_guess-n_guesses <= 5:
+        print(f"You have {max_guess-n_guesses} guesses left!\n")
     guess = input()
     if len(guess) != 4:
         print('Please enter a 4-digit number only.\n')
