@@ -13,3 +13,5 @@ HINT : 0 digits are at correct place.
        1 digits are at correct place.
              
 Using the hints, you have to guess the CODE.
+
+PS - Ideally, number of guesses should be entered 10-12.
