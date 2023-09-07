@@ -3,13 +3,16 @@ The hints will be provided which will tell the codebreaker about the accuracy of
 For Eg:
 
 if   CODE = 1234
-and  GUESS = 1567
-HINT : 1 digits are at correct place.
-       0 digits are at wrong place. 
+if  GUESS = 1567
 
-and GUESS = 5617
-HINT : 0 digits are at correct place.
-       1 digits are at correct place.
+HINT
+1 digits are at correct place.
+0 digits are at wrong place. 
+
+if GUESS = 5617
+HINT
+0 digits are at correct place.
+1 digits are at correct place.
              
 Using the hints, you have to guess the CODE.
 
